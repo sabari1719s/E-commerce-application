@@ -1,0 +1,12 @@
+{
+  "name": "ecommerce-app",
+  "version": "1.0.0",
+  "description": "Full-Stack E-Commerce Web Application",
+  "private": true,
+  "scripts": {
+    "db": "\"C:\\Program Files\\MongoDB\\Server\\8.3\\bin\\mongod.exe\" --dbpath C:\\Users\\Sabari\\.gemini\\antigravity-ide\\scratch\\db --port 27017",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "npx -y concurrently -k -p \"[{name}]\" -n \"backend,frontend\" -c \"magenta,cyan\" \"npm run backend\" \"npm run frontend\""
+  }
+}
